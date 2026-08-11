@@ -4,62 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مركز صيانة كريازى بمصر | إصلاح فوري لكافة الأجهزة المنزلية - 01030149010</title>
-    <meta name="description" content="نقدم خدمة صيانة كريازى في القاهرة والمحافظات، فريق فني متخصص لإصلاح الثلاجات، الغسالات، الديب فريزر والبوتجازات. فحص دقيق وسرعة في الإنجاز. اتصل بنا الآن.">
+    <meta name="description" content="مركز صيانة كريازى في مصر لإصلاح الثلاجات، الغسالات، الديب فريزر، البوتجازات والتكييفات. فحص شامل ودقة متناهية وسرعة في الإنجاز. اتصل بنا الآن.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root { --main-color: #0056b3; --secondary-color: #ffc107; --text-color: #333; }
-        body { font-family: 'Cairo', sans-serif; color: var(--text-color); line-height: 1.6; }
+        :root { --main-color: #004d26; --secondary-color: #ffc107; --text-color: #333; }
+        body { font-family: 'Cairo', sans-serif; color: var(--text-color); line-height: 1.8; background-color: #fff; }
         h1, h2, h3 { color: var(--main-color); font-weight: 800; }
-        .hero { background-color: #f8f9fa; padding: 80px 0; text-align: center; }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.4rem; max-width: 700px; margin: 0 auto 30px; }
-        .btn-cta { background-color: var(--secondary-color); color: #fff; font-weight: 700; padding: 15px 40px; font-size: 1.2rem; text-decoration: none; border-radius: 50px; transition: all 0.3s ease; }
+        .navbar-brand img { max-height: 55px; width: auto; }
+        .hero { background: linear-gradient(135deg, #f4f9f5 0%, #e1f0e5 100%); padding: 90px 0; text-align: center; border-bottom: 5px solid var(--secondary-color); }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 20px; color: var(--main-color); }
+        .hero p { font-size: 1.3rem; max-width: 750px; margin: 0 auto 30px; color: #444; }
+        .btn-cta { background-color: var(--secondary-color); color: #222; font-weight: 700; padding: 15px 40px; font-size: 1.2rem; text-decoration: none; border-radius: 50px; transition: all 0.3s ease; display: inline-block; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4); }
         .btn-cta:hover { background-color: var(--main-color); color: #fff; transform: translateY(-3px); }
-        .service-card { border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 15px; transition: all 0.4s ease; overflow: hidden; margin-bottom: 30px;}
-        .service-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .service-card img { height: 250px; object-fit: cover; border-bottom: 4px solid var(--main-color); }
-        .service-card .card-body { padding: 25px; }
-        .service-card h3 { font-size: 1.6rem; margin-bottom: 15px; }
-        .service-card p { color: #666; font-size: 0.95rem; }
-        section { padding: 80px 0; }
-        .section-title { text-align: center; margin-bottom: 60px; }
-        footer { background-color: var(--main-color); color: #fff; padding: 60px 0; }
-        footer h4 { color: var(--secondary-color); margin-bottom: 20px; }
+        .service-card { border: 1px solid #e0e0e0; box-shadow: 0 6px 20px rgba(0,0,0,0.04); border-radius: 15px; transition: all 0.4s ease; overflow: hidden; margin-bottom: 30px; background: #fff; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,77,38,0.12); border-color: var(--main-color); }
+        .service-card .card-body { padding: 30px; }
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 15px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        .service-card p { color: #555; font-size: 1rem; margin-bottom: 20px; }
+        section { padding: 70px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title p { color: #666; font-size: 1.1rem; }
+        footer { background-color: var(--main-color); color: #fff; padding: 60px 0 30px; }
+        footer h4 { color: var(--secondary-color); margin-bottom: 20px; font-weight: 700; }
         footer ul { list-style: none; padding: 0; }
-        footer ul li a { color: #eee; text-decoration: none; transition: 0.3s; }
-        footer ul li a:hover { color: #fff; }
-        .contact-info p { font-size: 1.1rem; margin-bottom: 10px; }
-        .contact-info strong { color: var(--secondary-color); }
+        footer ul li { margin-bottom: 10px; }
+        footer ul li a { color: #e2e2e2; text-decoration: none; transition: 0.3s; }
+        footer ul li a:hover { color: var(--secondary-color); padding-right: 5px; }
+        .contact-box { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm py-3">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <!-- يمكن استبدال النص بشعار -->
-                <h3 class="m-0 p-0 text-primary">مركز صيانة كريازى</h3>
+                <!-- استخدام اللوجو الفعلي -->
+                <img src="https://i.ibb.co/6R22849/logo.png" alt="مركز صيانة كريازى">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">خدماتنا</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#">صيانة الثلاجات</a></li>
-                            <li><a class="dropdown-item" href="#">صيانة الغسالات</a></li>
-                            <li><a class="dropdown-item" href="#">صيانة الديب فريزر</a></li>
-                            <li><a class="dropdown-item" href="#">صيانة البوتجازات</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">أعطال شائعة</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="#">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">خدمات الصيانة والاصلاح</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">لماذا نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a href="tel:01030149010" class="btn-cta">01030149010</a>
+                        <a href="tel:01030149010" class="btn-cta py-2 px-4 fs-6">01030149010</a>
                     </li>
                 </ul>
             </div>
@@ -69,9 +62,9 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h1>مركز صيانة كريازى الأول في مصر</h1>
-            <p>نحن نوفر لك حلولاً فورية ومستدامة لجميع أعطال الأجهزة المنزلية من كريازى. خبرة طويلة وفريق فني متطور لإعادة أجهزتك للعمل بكفاءة تامة.</p>
-            <a href="tel:01030149010" class="btn-cta">اطلب الصيانة الآن</a>
+            <h1>مركز صيانة كريازى المعتمد بمصر</h1>
+            <p>نقدم لك حلول صيانة شاملة وفورية لكافة الأجهزة المنزلية من ثلاجات وغسالات وديب فريزر وبوتجازات وتكييفات، معتمدة على فحص دقيق ومعالجة جذرية للأعطال لتستعيد أجهزتك كامل كفاءتها التشغيلية.</p>
+            <a href="tel:01030149010" class="btn-cta">احجز خدمة الإصلاح الفوري</a>
         </div>
     </header>
 
@@ -79,66 +72,67 @@
     <section id="services">
         <div class="container">
             <div class="section-title">
-                <h2>خدمات الصيانة المتخصصة</h2>
-                <p>تغطية شاملة لكافة أجهزة كريازى المنزلية بدقة عالية</p>
+                <h2>أقسام وخدمات الإصلاح الشاملة</h2>
+                <p>تغطية دقيقة لجميع موديلات وأصناف أجهزة كريازى المنزلية بأعلى معايير الجودة</p>
             </div>
             <div class="row">
                 <!-- Service 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card card h-100">
-                        <!-- مكان صورة الثلاجة -->
-                        <img src="images/fridge.jpg" class="card-img-top" alt="فني يقوم بصيانة ثلاجة كريازى">
+                    <div class="service-card h-100">
                         <div class="card-body">
                             <h3>صيانة ثلاجات كريازى</h3>
-                            <p>حلول جذرية لمشاكل التبريد، تسريب المياه، ضعف الفريزر، وتوقف الموتور. نستخدم قطع غيار عالية الجودة.</p>
-                            <a href="#" class="text-primary stretched-link">تعرف على الخدمة</a>
+                            <p>علاج شامل لمشاكل ضعف التبريد، تسريب المياه، تراكم الثلج، أعطال الفريزر، وتوقف الموتور. نستخدم أحدث أجهزة الكشف لتحديد سبب العطل وإصلاحه فوراً من الزيارة الأولى لضمان الحفاظ على طعامك طازجاً.</p>
+                            <a href="tel:01030149010" class="text-success fw-bold text-decoration-none">طلب صيانة الثلاجات &larr;</a>
                         </div>
                     </div>
                 </div>
                 <!-- Service 2 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card card h-100">
-                         <!-- مكان صورة الغسالة -->
-                        <img src="images/washing-machine.jpg" class="card-img-top" alt="فني يقوم بصيانة غسالة ملابس كريازى">
+                    <div class="service-card h-100">
                         <div class="card-body">
                             <h3>صيانة غسالات كريازى</h3>
-                            <p>إصلاح مشاكل عدم صرف المياه، عدم الدوران، اهتزاز الغسالة العالي، والأكواد الرقمية للأعطال (Errors).</p>
-                             <a href="#" class="text-primary stretched-link">تعرف على الخدمة</a>
+                            <p>حلول متكاملة لأعطال الغسالات الفولبرومات والعادية؛ مثل مشاكل عدم صرف المياه، توقف الحلة عن الدوران، الأصوات العالية والاهتزاز، وأخطاء الشاشات الرقمية. نضمن إعادة غسالتك للعمل بأعلى كفاءة ونظافة.</p>
+                            <a href="tel:01030149010" class="text-success fw-bold text-decoration-none">طلب صيانة الغسالات &larr;</a>
                         </div>
                     </div>
                 </div>
                 <!-- Service 3 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card card h-100">
-                         <!-- مكان صورة الديب فريزر -->
-                        <img src="images/deep-freezer.jpg" class="card-img-top" alt="صيانة ديب فريزر أفقي ورأسي">
+                    <div class="service-card h-100">
                         <div class="card-body">
                             <h3>صيانة ديب فريزر كريازى</h3>
-                            <p>نقدم فحصاً شاملاً لمنظومة التبريد ومعالجة تراكم الثلج وضعف التجميد للديب فريزر الفريستاند والأفقي.</p>
-                             <a href="#" class="text-primary stretched-link">تعرف على الخدمة</a>
+                            <p>فحص دقيق لمنظومة التبريد في الديب فريزر الرأسي والأفقي، معالجة ضعف التجميد، وفصل الدائرة الكهربائية المتكرر، وإصلاح مشاكل الغاز والتسريب لضمان أفضل حفظ للمجمدات.</p>
+                            <a href="tel:01030149010" class="text-success fw-bold text-decoration-none">طلب صيانة الديب فريزر &larr;</a>
                         </div>
                     </div>
                 </div>
                  <!-- Service 4 -->
-                <div class="col-lg-4 col-md-6 offset-lg-2">
-                    <div class="service-card card h-100">
-                         <!-- مكان صورة البوتجاز -->
-                        <img src="images/cooker.jpg" class="card-img-top" alt="إصلاح بوتجاز كريازى 4 و 5 شعلة">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
                         <div class="card-body">
                             <h3>صيانة بوتاجازات كريازى</h3>
-                            <p>تنظيم الشعلات، تغيير عيون البوتجاز، إصلاح الفرن والشواية، ومعالجة مشاكل الإشعال الذاتي.</p>
-                             <a href="#" class="text-primary stretched-link">تعرف على الخدمة</a>
+                            <p>إصلاح شامل لبوتجازات كريازى 4 و 5 شعلة، تسليك وتوسيع الفوانيس والشعلات، إصلاح أفران البوتجاز والشواية، ومعالجة أعطال مفتاح الإشعال الذاتي لضمان أمان كامل وسهولة في الاستخدام.</p>
+                            <a href="tel:01030149010" class="text-success fw-bold text-decoration-none">طلب صيانة البوتجازات &larr;</a>
                         </div>
                     </div>
                 </div>
                 <!-- Service 5 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="service-card card h-100">
-                        <img src="images/ac.jpg" class="card-img-top" alt="خدمات صيانة وتكييف كريازى">
+                    <div class="service-card h-100">
                         <div class="card-body">
                             <h3>صيانة تكييفات كريازى</h3>
-                            <p>تنظيف الفلاتر، معالجة ضعف التبريد، وشحن الفريون لجميع موديلات التكييفات الاسبليت والشباك.</p>
-                             <a href="#" class="text-primary stretched-link">تعرف على الخدمة</a>
+                            <p>خدمات صيانة وتنظيف المكيفات، معالجة ضعف دفع الهواء والتبريد، فحص الشحنة وشحن الفريون، وإصلاح أعطال الكباس والوحدة الخارجية لتنعم بجو هادئ ومنعش طوال الصيف.</p>
+                            <a href="tel:01030149010" class="text-success fw-bold text-decoration-none">طلب صيانة التكييفات &larr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card h-100">
+                        <div class="card-body">
+                            <h3>خدمات الصيانة الشاملة</h3>
+                            <p>استجابة سريعة لجميع بلاغات الأعطال في مختلف مناطق الجمهورية، مع تقديم تقرير فني شامل عن حالة الجهاز وتقديم الحلول العملية المباشرة دون أي إهدار لوقت العميل.</p>
+                            <a href="tel:01030149010" class="text-success fw-bold text-decoration-none">تواصل مع الدعم &larr;</a>
                         </div>
                     </div>
                 </div>
@@ -147,64 +141,70 @@
     </section>
 
     <!-- Why Us Section -->
-    <section id="why-us" class="bg-light">
+    <section id="about" class="bg-light border-top border-bottom">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2>ما يميز مركزنا في مصر</h2>
-                    <p>نحن نعتمد على خبرة تقنية متطورة ونستخدم أحدث أجهزة الفحص التي تحدد الأعطال بدقة متناهية، لضمان معالجة المشكلة من جذورها وتوفير وقت وجهد العميل.</p>
-                    <ul>
-                        <li>فريق فني متخصص ومستمر في التدريب</li>
-                        <li>استجابة فورية لبلاغات الأعطال في كافة المناطق</li>
-                        <li>خدمة منزلية تغطي محافظات القاهرة الكبرى</li>
-                        <li>شفافية كاملة في التكلفة قبل البدء في العمل</li>
-                        <li>فحص شامل لجميع أجزاء الجهاز بعد الإصلاح</li>
-                    </ul>
-                     <a href="tel:01030149010" class="btn-cta mt-4">احجز موعدك الآن</a>
+                <div class="col-lg-12 text-center mb-4">
+                    <h2>لماذا يختار العملاء مركز صيانة كريازى؟</h2>
+                    <p class="lead text-muted">نعتمد على المعايير التقنية المتقدمة والدقة المتناهية لخدمة أجهزتك</p>
                 </div>
-                <div class="col-lg-6 mt-5 mt-lg-0 text-center">
-                    <img src="images/technician-team.jpg" alt="فريق صيانة كريازى جاهز للعمل" class="img-fluid rounded shadow-lg w-75">
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="h5 text-success fw-bold">فحص دقيق بالوسائل الحديثة</h4>
+                        <p class="text-muted m-0">نستخدم أحدث أساليب التشخيص والفحص لاكتشاف الأعطال بدقة تامة من المرة الأولى واختصار وقت الإصلاح.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="h5 text-success fw-bold">سرعة الاستجابة والتنفيذ</h4>
+                        <p class="text-muted m-0">نلبي بلاغات الصيانة بسرعة عالية ونغطي كافة مناطق القاهرة والمحافظات بخدمة ميدانية متكاملة ومباشرة.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="h5 text-success fw-bold">التزام بالمصداقية والشفافية</h4>
+                        <p class="text-muted m-0">نوضح للعميل كافة تفاصيل العطل وتكلفة الإصلاح بوضوح تام قبل بدء العمل لضمان راحة بالك وثقتك الكاملة.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 contact-info mb-4 mb-lg-0">
-                    <h4>معلومات الاتصال</h4>
-                    <p><strong>مركز صيانة كريازى</strong></p>
-                    <p>نحن ملتزمون بتقديم خدمة استثنائية وإعادة الكفاءة التشغيلية لأجهزتك.</p>
-                    <p>العنوان: 11 شارع صالح أيوب، الزمالك، القاهرة، مصر</p>
-                    <p>المقر الرئيسي للخدمة الفنية والدعم</p>
-                    <p class="mt-3"><strong>هاتف الطوارئ: <a href="tel:01030149010" class="text-warning fw-bold fs-4">01030149010</a></strong></p>
+                <div class="col-lg-5 contact-box mb-4 mb-lg-0">
+                    <h4>معلومات الاتصال والمقر</h4>
+                    <p class="mb-2"><strong>مركز صيانة كريازى</strong></p>
+                    <p class="mb-2">الوجهة الأولى والأكثر موثوقية لخدمات إصلاح وصيانة الأجهزة المنزلية بمصر.</p>
+                    <p class="mb-2"><strong>العنوان:</strong> 11 شارع صالح أيوب، الزمالك، القاهرة، مصر</p>
+                    <p class="mt-3 mb-0"><strong>رقم الطوارئ والدعم:</strong> <a href="tel:01030149010" class="text-warning fw-bold fs-4 text-decoration-none d-inline-block mt-1">01030149010</a></p>
                 </div>
                 <div class="col-lg-3 offset-lg-1 mb-4 mb-lg-0">
-                    <h4>روابط سريعة</h4>
+                    <h4>أقسام الموقع</h4>
                     <ul>
-                        <li><a href="#">من نحن</a></li>
-                        <li><a href="#">شروط الاستخدام</a></li>
-                        <li><a href="#">سياسة الخصوصية</a></li>
-                        <li><a href="#">خريطة الموقع</a></li>
-                         <li><a href="#">أحدث التقنيات في الصيانة</a></li>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#services">خدمات الصيانة والاصلاح</a></li>
+                        <li><a href="#about">لماذا نحن</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                     <h4>مناطق الخدمة بالقاهرة</h4>
+                     <h4>أهم الخدمات</h4>
                     <ul>
-                        <li><a href="#">صيانة كريازى الزمالك</a></li>
-                        <li><a href="#">صيانة كريازى مصر الجديدة</a></li>
-                        <li><a href="#">صيانة كريازى التجمع</a></li>
-                        <li><a href="#">صيانة كريازى الشيخ زايد</a></li>
-                         <li><a href="#">صيانة كريازى 6 أكتوبر</a></li>
+                        <li><a href="#services">صيانة ثلاجات كريازى</a></li>
+                        <li><a href="#services">صيانة غسالات كريازى</a></li>
+                        <li><a href="#services">صيانة ديب فريزر كريازى</a></li>
+                        <li><a href="#services">صيانة بوتاجازات كريازى</a></li>
+                        <li><a href="#services">صيانة تكييفات كريازى</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row mt-5 text-center border-top pt-4">
-                <p class="m-0">&copy; 2024 مركز صيانة كريازى. جميع الحقوق محفوظة.</p>
-                <p class="m-0 text-secondary" style="font-size: 0.9rem;">هذا الموقع مخصص لخدمات صيانة كريازى في مصر.</p>
+            <div class="row mt-5 text-center border-top border-secondary pt-4">
+                <p class="m-0 text-light">&copy; 2026 مركز صيانة كريازى. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
