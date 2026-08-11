@@ -10,7 +10,32 @@
         :root { --main-color: #004d26; --secondary-color: #ffc107; --text-color: #333; }
         body { font-family: 'Cairo', sans-serif; color: var(--text-color); line-height: 1.8; background-color: #fff; }
         h1, h2, h3 { color: var(--main-color); font-weight: 800; }
-        .navbar-brand img { max-height: 60px; width: auto; }
+        
+        /* تصميم شعار نصي احترافي مطابق لألوان وأسلوب كريازى يغنيك عن روابط الصور التالفة */
+        .brand-logo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            background: var(--main-color);
+            padding: 8px 18px;
+            border-radius: 8px;
+            border: 2px solid var(--secondary-color);
+        }
+        .brand-logo .main-text {
+            color: var(--secondary-color);
+            font-size: 1.6rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 1px;
+        }
+        .brand-logo .sub-text {
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
         .hero { background: linear-gradient(135deg, #f4f9f5 0%, #e1f0e5 100%); padding: 90px 0; text-align: center; border-bottom: 5px solid var(--secondary-color); }
         .hero h1 { font-size: 3.2rem; margin-bottom: 20px; color: var(--main-color); }
         .hero p { font-size: 1.3rem; max-width: 750px; margin: 0 auto 30px; color: #444; }
@@ -36,10 +61,11 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm py-2">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="https://kiriazi.maintenance-eg.net/">
-                <img src="https://i.ibb.co/6R22849/logo.png" alt="مركز صيانة كريازى">
+            <a class="brand-logo" href="https://kiriazi.maintenance-eg.net/">
+                <span class="main-text">كريازى</span>
+                <span class="sub-text">مركز صيانة كريازى</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
